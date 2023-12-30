@@ -21,7 +21,7 @@ const useTodos = () => {
           reject(e)
         }
       }),
-    queryKey: TodoQueryKeys.getAllTodos,
+    queryKey: [TodoQueryKeys.getAllTodos],
   })
 
   const addTodoMutation = useMutation({
